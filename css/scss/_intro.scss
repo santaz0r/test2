@@ -83,3 +83,15 @@
     }
   }
 }
+
+.purple-light {
+  position: absolute;
+  top: -382px;
+  left: 38%;
+  @include lighting(
+    $color: $header_light,
+    $width: 311px,
+    $height: 311px,
+    $blur: 196px
+  );
+}

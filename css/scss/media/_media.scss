@@ -1,0 +1,24 @@
+@media (max-width: 1160px) {
+  .container {
+    max-width: 940px;
+  }
+}
+
+@media (max-width: 970px) {
+  .container {
+    max-width: 95%;
+  }
+  .red-circle {
+    top: 20px;
+  }
+  .purple-cirlce {
+    z-index: -1;
+  }
+}
+
+@media (max-width: 550px) {
+  .purple-light {
+    top: 10%;
+    left: 93%;
+  }
+}

@@ -1,0 +1,37 @@
+@media (max-width: 730px) {
+  .footer {
+    background: $background_color;
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+    &__menu-item {
+    }
+    &__contacts {
+      text-align: left;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .footer {
+    padding-left: 15px;
+    background: $background_color;
+    &__wrapper {
+    }
+
+    &__menu-item {
+      &:first-child {
+        width: 100%;
+      }
+      &:nth-child(2) {
+        width: max-content;
+      }
+      font-size: 1.4rem;
+      width: min-content;
+      flex: unset;
+    }
+    &__policy {
+      text-align: left;
+    }
+  }
+}

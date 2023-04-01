@@ -55,13 +55,13 @@ html {
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   top: -28px;
-  left: 529px;
+  left: 38%;
 }
 .red-circle.small {
   width: 28px;
   height: 28px;
   top: 430px;
-  left: 848px;
+  left: 60%;
   -webkit-filter: blur(2.5px);
           filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2px);
@@ -72,8 +72,8 @@ html {
   position: absolute;
   width: 60px;
   height: 60px;
-  left: 868px;
-  top: -2px;
+  left: 62%;
+  top: -117px;
   border-radius: 50%;
   background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%);
   -webkit-box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
@@ -415,18 +415,6 @@ template {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-.header__purple-light {
-  position: absolute;
-  top: -243px;
-  left: 564px;
-  width: 311px;
-  height: 311px;
-  background: #833ab4;
-  opacity: 0.5;
-  -webkit-filter: blur(196px);
-          filter: blur(196px);
-  z-index: -1;
-}
 .header__logo {
   width: 140px;
 }
@@ -601,10 +589,34 @@ template {
   font-weight: 500;
 }
 
+.purple-light {
+  position: absolute;
+  top: -382px;
+  left: 38%;
+  width: 311px;
+  height: 311px;
+  background: #833ab4;
+  opacity: 0.5;
+  -webkit-filter: blur(196px);
+          filter: blur(196px);
+  z-index: -1;
+}
+
 .footer {
   padding: 40px 0 20px;
 }
 .footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+.footer__media_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -653,6 +665,234 @@ template {
   color: inherit;
 }
 
+@media (max-width: 1160px) {
+  .header__socials {
+    display: none;
+  }
+  .header__menu {
+    margin-right: 0;
+  }
+}
+@media (max-width: 970px) {
+  .header {
+    padding-top: 1rem;
+    background-color: #0e1014;
+  }
+  .header__wrapper {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__phone {
+    display: none;
+  }
+  .header__purple-light {
+    top: 70%;
+    left: 30%;
+    width: 280px;
+    height: 280px;
+  }
+  .purple-cirlce {
+    top: 320px;
+    width: 48px;
+    height: 48px;
+    left: 92%;
+  }
+}
+@media (max-width: 730px) {
+  .logo {
+    width: inherit;
+  }
+  .logo__info {
+    display: none;
+  }
+  .header {
+    min-height: 5.5rem;
+  }
+  .header__logo {
+    width: 27px;
+  }
+}
+@media (max-width: 550px) {
+  .navigation {
+    width: 100%;
+  }
+  .header__wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__logo {
+    display: none;
+  }
+  .header__menu {
+    width: 100%;
+  }
+  .header__menu-item {
+    font-size: 1.2rem;
+    padding: 0 1.6rem;
+  }
+  .header__menu-item:last-child {
+    display: none;
+  }
+  .header__purple-light {
+    top: 0;
+    left: 0;
+    width: 259px;
+    height: 259px;
+  }
+}
+@media (max-width: 730px) {
+  .intro {
+    padding: 3rem 1.5rem 6rem;
+  }
+  .intro__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+  }
+  .intro__descr {
+    width: unset;
+    text-align: left;
+  }
+  .intro__consult {
+    margin-top: 4.5rem;
+    width: 100%;
+    text-align: left;
+  }
+  .intro__consult-gifts {
+    text-align: unset;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media (max-width: 550px) {
+  .intro {
+    overflow: hidden;
+  }
+  .intro__subtitle {
+    font-size: 3.6rem;
+  }
+  .intro__title {
+    font-size: 3.6rem;
+  }
+  .intro__consult-item_title {
+    font-size: 1.6rem;
+  }
+  .intro__consult-item_descr {
+    font-size: 1.4rem;
+  }
+  .red-circle {
+    display: none;
+  }
+  .red-circle.small {
+    display: block;
+    top: 91%;
+    left: 20px;
+    width: 43px;
+    height: 43px;
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+    z-index: -1;
+  }
+}
+@media (max-width: 445px) {
+  .intro {
+    min-height: 445px;
+  }
+  .intro__consult-item {
+    padding: 0.7rem 2rem;
+    position: relative;
+  }
+  .intro__consult-item::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    background: -webkit-gradient(linear, left top, right top, color-stop(36.99%, #fcb045), to(#fd1d1d));
+    background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+    top: 50%;
+    left: 0px;
+    margin-right: 10px;
+  }
+  .intro__consult-item_title {
+    font-size: 1.3rem;
+  }
+  .intro__consult-item_descr {
+    display: none;
+  }
+  .intro__consult-btn {
+    display: none;
+  }
+}
+@media (max-width: 1160px) {
+  .container {
+    max-width: 940px;
+  }
+}
+@media (max-width: 970px) {
+  .container {
+    max-width: 95%;
+  }
+  .red-circle {
+    top: 20px;
+  }
+  .purple-cirlce {
+    z-index: -1;
+  }
+}
+@media (max-width: 550px) {
+  .purple-light {
+    top: 10%;
+    left: 93%;
+  }
+}
+@media (max-width: 730px) {
+  .footer {
+    background: #0e1014;
+  }
+  .footer__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__contacts {
+    text-align: left;
+  }
+}
+@media (max-width: 550px) {
+  .footer {
+    padding-left: 15px;
+    background: #0e1014;
+  }
+  .footer__menu-item {
+    font-size: 1.4rem;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+  }
+  .footer__menu-item:first-child {
+    width: 100%;
+  }
+  .footer__menu-item:nth-child(2) {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .footer__policy {
+    text-align: left;
+  }
+}
 .page {
   background-color: #0e1014;
   color: #e4e5ea;

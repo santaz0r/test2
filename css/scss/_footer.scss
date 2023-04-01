@@ -3,6 +3,9 @@
   &__wrapper {
     @include flex($justify: space-between);
   }
+  &__media_wrapper {
+    @include flex($justify: space-between);
+  }
   &__menu {
     &-item {
       list-style-type: none;

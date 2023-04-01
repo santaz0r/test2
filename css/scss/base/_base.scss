@@ -27,12 +27,12 @@
   box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
   backdrop-filter: blur(2px);
   top: -28px;
-  left: 529px;
+  left: 38%;
   &.small {
     width: 28px;
     height: 28px;
     top: 430px;
-    left: 848px;
+    left: 60%;
     filter: blur(2.5px);
     backdrop-filter: blur(2px);
   }
@@ -42,8 +42,8 @@
   position: absolute;
   width: 60px;
   height: 60px;
-  left: 868px;
-  top: -2px;
+  left: 62%;
+  top: -117px;
   border-radius: 50%;
   background: radial-gradient(
     64% 64% at 27.25% 26.5%,

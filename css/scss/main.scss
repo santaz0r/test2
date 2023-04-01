@@ -22,6 +22,11 @@ html {
 @import "intro";
 @import "footer";
 
+@import "./media/header";
+@import "./media/intro";
+@import "./media/media";
+@import "./media/footer";
+
 .page {
   background-color: $background_color;
   color: $text_color;
