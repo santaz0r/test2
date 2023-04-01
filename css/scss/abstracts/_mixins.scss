@@ -1,0 +1,21 @@
+@mixin flex($justify: unset, $align: unset) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin font($size: unset, $lineHeight: unset, $weight: 400) {
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: $weight;
+}
+
+@mixin lighting($opacity: 0.5, $color, $height, $width, $blur) {
+  width: $width;
+  height: $height;
+
+  background: $color;
+  opacity: $opacity;
+  filter: blur($blur);
+  z-index: -1;
+}

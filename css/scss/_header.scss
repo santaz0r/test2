@@ -1,0 +1,61 @@
+.header {
+  padding-top: 5.6rem;
+  min-height: 7.3rem;
+  position: relative;
+  &__wrapper {
+    @include flex($justify: space-between, $align: flex-start);
+  }
+  &__purple-light {
+    position: absolute;
+    top: -243px;
+    left: 564px;
+    @include lighting(
+      $color: $header_light,
+      $width: 311px,
+      $height: 311px,
+      $blur: 196px
+    );
+  }
+
+  &__logo {
+    width: 140px;
+  }
+  &__menu {
+    @include flex($justify: space-between, $align: center);
+    list-style-type: none;
+    padding: 0.6rem 0;
+    margin: 0;
+    margin-right: 8rem;
+    &-item {
+      padding: 0 1.5rem;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+      cursor: pointer;
+      @include font($size: 1.6rem, $weight: 500, $lineHeight: 1.9rem);
+    }
+  }
+
+  &__phone {
+    color: $text_color;
+    text-decoration: none;
+    padding: 0.6rem 0;
+    @include font($size: 1.6rem, $weight: 500, $lineHeight: 1.9rem);
+  }
+
+  &__socials {
+    @include flex($justify: space-between, $align: center);
+    &-link {
+      padding: 0.6rem 1.5rem;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}

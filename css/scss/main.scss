@@ -1,0 +1,29 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/button";
+@import "./base/base";
+
+@import "normalize";
+@import "header";
+@import "intro";
+@import "footer";
+
+.page {
+  background-color: $background_color;
+  color: $text_color;
+  font-size: 1.6rem;
+}

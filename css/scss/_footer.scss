@@ -1,0 +1,43 @@
+.footer {
+  padding: 40px 0 20px;
+  &__wrapper {
+    @include flex($justify: space-between);
+  }
+  &__menu {
+    &-item {
+      list-style-type: none;
+      padding: 0;
+      li {
+        padding: 0.5rem 0;
+        cursor: pointer;
+      }
+    }
+    &-title {
+      @include font($size: 1.4rem, $weight: 700, $lineHeight: 1.7rem);
+      letter-spacing: 0.05em;
+      color: $text_color_dark;
+      margin-bottom: 2rem;
+      display: inline-block;
+    }
+  }
+  &__contacts {
+    text-align: right;
+    &-item {
+      padding: 1rem 0;
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__policy {
+    text-align: right;
+    font-family: "Montserrat";
+    @include font($size: 1.2rem, $weight: 400, $lineHeight: 1.5rem);
+
+    a {
+      color: inherit;
+    }
+  }
+}

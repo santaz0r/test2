@@ -1,0 +1,14 @@
+.btn {
+  width: 26.2rem;
+  height: 6.1rem;
+  background: $btn_bg_color;
+  border: none;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    background-color: green;
+  }
+  &:focus {
+    background-color: green;
+  }
+}

@@ -1,0 +1,85 @@
+.intro {
+  position: relative;
+  padding-top: 9rem;
+  min-height: 546px;
+  &__wrapper {
+    @include flex($justify: space-between);
+  }
+
+  &__descr {
+    width: min-content;
+    position: relative;
+    &_red-light {
+      position: absolute;
+      left: -174px;
+      top: 60px;
+      @include lighting(
+        $color: $main_light,
+        $width: 311px,
+        $height: 311px,
+        $blur: 196px
+      );
+    }
+  }
+  &__subtitle {
+    @include font($size: 4.8rem, $weight: 400, $lineHeight: 5.8rem);
+  }
+  &__title {
+    margin: 0;
+
+    @include font($size: 4.8rem, $weight: 900, $lineHeight: 5.8rem);
+    background: linear-gradient(92deg, #fcb045 15.14%, #ff3f78 90.36%),
+      $text_color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  &__info {
+    margin-top: 3rem;
+
+    font-family: "Montserrat";
+    @include font($size: 1.8rem, $weight: 400, $lineHeight: 2.2rem);
+  }
+
+  &__consult {
+    margin-top: 1.5rem;
+    width: 29rem;
+    text-align: right;
+    &-title {
+      letter-spacing: 0.05em;
+      @include font($size: 1.8rem, $weight: 500, $lineHeight: 2.2rem);
+      span {
+        background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%),
+          $text_color;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+    &-gifts {
+      @include flex($justify: space-between, $align: center);
+      flex-wrap: wrap;
+      text-align: right;
+
+      margin-top: 2.5rem;
+    }
+    &-item {
+      width: 13.5rem;
+      padding: 1.5rem 0;
+      &_title {
+        @include font($size: 1.8rem, $weight: 500, $lineHeight: 2.2rem);
+      }
+      &_descr {
+        margin-top: 0.6rem;
+        font-family: "Montserrat";
+        @include font($size: 1.6rem, $weight: 400, $lineHeight: 2rem);
+      }
+    }
+    &-btn {
+      margin-top: 4.9rem;
+      @include font($size: 1.6rem, $weight: 500, $lineHeight: 1.9rem);
+    }
+  }
+}
